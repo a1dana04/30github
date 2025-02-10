@@ -1,0 +1,200 @@
+.header1 {
+    padding: 30px 0;
+
+    .header {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            display: none;
+        }
+
+        a {
+            font-size: 18px;
+
+
+            line-height: 27.32px;
+            margin-left: 30px;
+            color: black;
+
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+
+            button {
+                padding: 12px 20px;
+                background: #D7EAFF;
+                border: none;
+                outline: none;
+                color: #2B7BD4;
+                border-radius: 10px;
+
+
+            }
+
+            .btn2 {
+                button {
+                    border: 2px solid #2B7BD4;
+                    background: none;
+
+                }
+            }
+        }
+    }
+
+    .modal {
+        
+
+        display: flex;
+        padding: 60px 40px;
+        flex-direction: column;
+        width: 700px;
+        height: 500px;
+        background: #b1cff0;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        z-index: 1000;
+
+
+
+        span {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        a {
+            margin-top: 20px;
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+    .header1 {
+        .header {
+            .nav {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 913px) {
+    .header1 {
+        .header {
+            .nav {
+                a {
+                    font-size: 14px;
+                }
+            }
+
+            .btn {
+                button {
+                    padding: 8px 15px;
+                }
+            }
+
+           
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header1 {
+        .header {
+
+            h1 {
+                display: flex;
+            }
+
+            img {
+                width: 30%;
+            }
+
+            .nav {
+                display: none;
+
+                a {
+                    font-size: 14px;
+                }
+            }
+
+            .btn {
+                display: none;
+
+                button {
+                    padding: 8px 15px;
+                }
+            }
+
+            .btn2 {
+                button {}
+            }
+        }
+
+        .modal {
+            animation: modal 0.3s alternate ease-in-out;
+            text-align: left;
+            width: 100%;
+        }
+        img{
+            width: 30%;
+        }
+
+        @keyframes modal {
+            0% {
+                transform: translateX(700px);
+            }
+            100% {
+                transform: translateX(0); 
+            }
+        }
+
+        .modal span {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media (max-width: 640px) {
+.header1{
+        .header{
+            img{
+                width: 35%;
+            }
+            h1{
+                font-size: 40px;
+            }
+        }
+        .modal{
+            width: 100%;
+
+            img{
+                width: 30%;
+            }
+        }
+        
+    }
+
+}

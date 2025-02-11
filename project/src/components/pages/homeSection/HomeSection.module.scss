@@ -1,0 +1,265 @@
+.glavnyi1 {
+    background: #abc9ec;
+    margin-bottom: 150px;
+    width: 100%;
+
+
+    .glavnyi {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .text {
+            h1 {
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 64px;
+                text-align: left;
+                color: #024493;
+
+
+
+
+            }
+
+            span {
+                color: #fcf9f9;
+
+            }
+
+            .parag {
+                text-align: center;
+
+
+                .butt {
+                    margin-top: 40px;
+                    margin-bottom: 15px;
+
+                    .btn1 {
+                        background: #024493;
+                        padding: 12px 30px;
+                        border-radius: 12px;
+                        color: white;
+
+
+
+
+
+                    }
+
+                    .btn2 {
+
+                        padding: 12px 30px;
+                        gap: 10px;
+                        border-radius: 2px 10px 10px 2px;
+                        color: #A4CFFF;
+                        background: white;
+
+
+                    }
+                }
+
+                p {
+
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 26px;
+                    letter-spacing: 0.02em;
+                    text-align: center;
+                    color: #024493;
+                    margin-bottom: 20px;
+
+                }
+
+
+
+
+
+
+                .btn3 {
+                    padding: 17px 60px;
+                    background: #2B7BD4;
+                    color: white;
+                    border-radius: 12px;
+                    font-size: 18px;
+
+                }
+            }
+
+
+
+
+        }
+
+        .img {
+            img {
+                width: 666px;
+                height: 712px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .glavnyi1 {
+        width: 100%;
+
+        .glavnyi {
+
+            .text {
+                h1 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 40px;
+
+                }
+
+                .parag {
+                    .btn3 {
+                        padding: 17px 60px;
+
+                        font-size: 15px;
+
+                    }
+
+                    .butt {
+                        .btn1 {
+                            font-size: 12px;
+                        }
+
+                        .btn2 {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .img {
+                img {
+                    width: 565px;
+                    height: 617px;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .glavnyi1 {
+        padding: 50px 0;
+
+        .glavnyi {
+            flex-direction: column;
+
+            .text {
+                h1 {
+                    font-size: 58px;
+                    font-weight: 800;
+                    line-height: 70px;
+                    text-align: center;
+                }
+
+                .parag {
+                    .butt {
+                        .btn1 {
+                            font-size: 15px;
+                            padding: 18px 60px;
+
+
+
+                        }
+
+                        .btn2 {
+                            font-size: 15px;
+                            padding: 18px 60px;
+                            border-radius: 12px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+
+
+                        }
+
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                    .btn3 {
+                        padding: 20px 90px;
+
+                        font-size: 20px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .img {
+                img {
+                    width: 642px;
+                    height: 657px;
+
+                }
+            }
+
+
+        }
+    }
+}
+
+
+
+@media (max-width: 640px) {
+    .glavnyi1 {
+        
+
+        .glavnyi {
+           
+
+            .text {
+                h1 {
+                    font-size: 50px;
+                }
+
+                .parag {
+                .butt {
+                        .btn1 {
+                            
+
+
+
+                        }
+
+                        .btn2 {
+                            
+
+
+                        }
+
+                    }
+
+                    p {
+                        
+                    }
+
+                    .btn3 {
+                        
+                    }
+                }
+            }
+
+            .img {
+                img {
+                    width: 600px;
+                    height: 600px;
+                    margin-top: 30px;
+
+                }
+            }
+
+
+        }
+    }
+}

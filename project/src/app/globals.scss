@@ -1,14 +1,34 @@
 * {
-	box-sizing: border-box;
-	padding: 0;
 	margin: 0;
-}
-
-li {
-	list-style: none;
-}
-
-a {
-	color: inherit;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  html {
+	color-scheme: dark;
+  }
+  
+  a {
 	text-decoration: none;
-}
+  }
+  
+  body {
+	font-family: "Inter", sans-serif;
+	background: white;
+	
+  }
+ 
+  .container {
+	max-width: 1500px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+
+  
+  button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+  }
+  

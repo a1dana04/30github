@@ -1,0 +1,140 @@
+.doctor1 {
+    .doctor {
+        img {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 70px;
+            color: #484B4D;
+            margin-bottom: 20px;
+
+        }
+
+        h2 {
+
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 60.1px;
+            text-align: center;
+            color: #2B7BD4;
+            margin-bottom: 35px;
+
+
+        }
+
+    }
+
+    .edu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .books {
+            text-align: center;
+
+            h1 {
+                margin: 10px 20px;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 40.98px;
+                text-align: center;
+
+            }
+
+            p{
+               width: 70%;
+                font-weight: 200;
+                font-weight: 700;
+                line-height: 40.98px;
+                text-align: center;
+                margin: 0 auto;
+                color: #484B4D;
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .doctor1 {
+        .doctor {
+            h1 {
+                font-size: 25px;
+
+
+                font-weight: 700;
+                line-height: 60px;
+                color: #484B4D;
+                margin-bottom: 20px;
+            }
+        }
+
+        .edu {
+
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .books {
+                margin-bottom: 60px;
+
+                img {
+                    width: 40%;
+                }
+
+                h1 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 40px;
+                }
+
+            }
+        }
+    }
+
+}
+
+
+
+@media (max-width: 640px) {
+    .doctor1 {
+        .doctor {
+            h1 {
+                font-size: 25px;
+                line-height: 40px;
+
+
+
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+        }
+
+        .edu {
+
+
+            .books {
+
+                img {}
+
+                h1 {}
+
+                p {}
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,253 @@
+.consul1 {
+    padding: 80px 0;
+    text-align: center;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 60.1px;
+        text-align: center;
+        margin-bottom: 40px;
+        color: black;
+    }
+
+    span {
+        color: #2b7bd4;
+    }
+
+    .consul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        position: relative;
+
+        .card {
+            padding: 25px 25px;
+            width: 30%;
+            height: 310px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid rgb(236, 227, 227);
+
+            img {
+                width: 50%;
+                margin-top: 45px;
+            }
+
+            h4 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: left;
+                position: absolute;
+                top: 131px;
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #777777;
+                position: absolute;
+                top: 208px;
+            }
+        }
+
+
+        .card1 {
+            padding: 25px 25px;
+            width: 30%;
+            height: 310px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid rgb(236, 227, 227);
+
+            img {
+                width: 50%;
+                margin-top: 45px;
+            }
+
+            h4 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: left;
+                position: absolute;
+                top: 131px;
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #777777;
+                position: absolute;
+                top: 208px;
+            }
+        }
+
+
+
+        .card2 {
+            padding: 25px 25px;
+            width: 30%;
+            height: 310px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid rgb(236, 227, 227);
+
+            img {
+                width: 50%;
+                margin-top: 45px;
+            }
+
+            h4 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: left;
+                position: absolute;
+                top: 131px;
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #777777;
+                position: absolute;
+                top: 208px;
+            }
+        }
+    }
+
+    button {
+        padding: 12px 40px;
+        border-radius: 6px;
+        background: #2b7bd4;
+        color: white;
+        margin-top: 60px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .consul1 {
+        .consul {
+            .card {
+                width: 31%;
+                height: 333px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .consul1 {
+
+
+        .consul {
+
+            flex-direction: column;
+
+            .card {
+                width: 50%;
+                height: 333px;
+
+                h4 {
+                    position: absolute;
+                    top: 131px;
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+
+            }
+
+
+            .card1 {
+                width: 50%;
+                height: 333px;
+
+                h4 {
+                    position: absolute;
+                    top: 47%;
+                    font-size: 22px;
+                }
+
+                P {
+                    position: absolute;
+                    top: 55%;
+                    font-size: 15px;
+                }
+
+
+            }
+
+            .card2 {
+                width: 50%;
+                height: 333px;
+
+                h4 {
+                    position: absolute;
+                    top: 81%;
+                    font-size: 22px;
+                }
+
+                p {
+                    position: absolute;
+                    top: 88%;
+                    font-size: 15px;
+                }
+
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 640px) {
+    .consul1 {
+
+
+        .consul {
+
+            flex-direction: column;
+
+            .card {
+                width: 60%;
+
+
+            }
+
+
+            .card1 {
+                width: 60%;
+
+
+
+            }
+
+            .card2 {
+                width: 60%;
+
+
+
+
+            }
+        }
+    }
+}

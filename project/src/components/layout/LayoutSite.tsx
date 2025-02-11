@@ -1,19 +1,38 @@
-import Footer from "./Footer/Footer";
-import Header from "./Header/Header";
+"use client";
+import { FC, ReactNode, useEffect, useState } from "react";
 import scss from "./LayoutSite.module.scss";
-import { FC, ReactNode } from "react";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import Loader from "@/ui/loader/Loader";
 
-interface LayoutSiteProps {
+interface iLayoutSiteProps {
   children: ReactNode;
 }
+const LayoutSite: FC<iLayoutSiteProps> = ({ children }) => {
+  const [isLoader, setIsLoader] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoader(false);
+    }, 1000);
 
-const LayoutSite: FC<LayoutSiteProps> = ({ children }) => {
+    return () => clearTimeout(timer);
+  }, []);
   return (
-    <div className={scss.LayoutSite}>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </div>
+    <>
+      {isLoader ? (
+        <>
+          <Loader />
+        </>
+      ) : (
+        <>
+          <section className={scss.LayoutSite}>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </section>
+        </>
+      )}
+    </>
   );
 };
 

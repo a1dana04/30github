@@ -1,0 +1,65 @@
+.service1 {
+    padding: 80px 0;
+    .service {
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 700;
+        color: black;
+        span {
+          color: rgba(43, 123, 212, 1);
+        }
+      }
+      .content {
+        position: relative;
+        padding: 133px 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        .cards {
+          display: flex;
+          position: relative;
+          width: 100%;
+          background: greenyellow;
+          .card {
+            width: 243px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+            h3 {
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 30px;
+              letter-spacing: 0.02em;
+              color: rgba(142, 142, 142, 1);
+            }
+            &:first-child {
+              position: absolute;
+              left: 0%;
+              top: 179px;
+            }
+            &:nth-child(2) {
+              position: absolute;
+              left: 18%;
+              top: -64px;
+            }
+            &:nth-child(3) {
+              position: absolute;
+              left: 61%;
+              top: -93px;
+            }
+            &:nth-child(4) {
+              position: absolute;
+              left: 84%;
+              top: 226px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

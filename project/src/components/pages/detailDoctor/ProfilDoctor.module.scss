@@ -1,0 +1,348 @@
+.profilDoctor1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h1 {
+        margin-bottom: 30px;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 46.44px;
+        text-align: left;
+
+    }
+
+    .profilDoctor {
+        display: flex;
+        gap: 40px;
+
+
+        .text {
+
+            border: 1px solid rgb(218, 211, 211);
+            width: 100%;
+            padding: 20px 20px;
+            border-radius: 12px;
+
+
+            h1 {
+                font-size: 35px;
+                font-weight: 700;
+                line-height: 57.37px;
+            }
+
+            span {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 32.78px;
+                color: #2B7BD4;
+
+
+            }
+
+            h6 {
+                font-size: 16px;
+                line-height: 38px;
+                margin-top: 20px;
+                margin-bottom: 35px;
+                font-weight: 300;
+
+            }
+
+            .detal {
+                display: flex;
+                gap: 30px;
+                margin-top: 20px;
+
+
+
+                .key {
+                    p {
+                        font-size: 17px;
+                        font-weight: 500;
+
+                        margin-top: 19px;
+
+                    }
+
+
+                }
+
+                .value {
+                    .star1 {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .block {
+                            margin-top: 10px;
+
+                        }
+                    }
+
+                    p {
+
+                        font-size: 17px;
+                        font-weight: 300;
+                        line-height: 22px;
+
+                        margin-top: 10px;
+
+                        span {
+                            width: 24px;
+                            height: 24px;
+                            color: black;
+
+
+
+                        }
+
+
+                    }
+
+
+
+                }
+
+                .money {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    width: 33%;
+
+                    h1 {
+
+                        font-size: 30px;
+                        font-weight: 800;
+                        line-height: 46.44px;
+                        letter-spacing: -0.02em;
+                        text-align: center;
+                        color: #2B7BD4;
+
+
+                    }
+
+
+
+                }
+            }
+
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20%;
+                margin-top: 10%;
+
+                .btn1 {
+
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 30.05px;
+                    text-align: center;
+                    background: none;
+                    border: none;
+                    color: #2B7BD4;
+
+                }
+
+                .btn2 {
+
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 30.05px;
+                    text-align: center;
+                    padding: 12px 80px;
+                    background: #2B7BD4;
+                    color: white;
+                    border-radius: 12px;
+                    border: none;
+
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 1040px) {
+    .profilDoctor1 {
+        .profilDoctor {
+            .text {
+                h1 {
+                    font-size: 30px;
+                }
+
+                span {
+                    font-size: 20px;
+
+                }
+
+                h6 {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+
+                .detal {
+                    .key {
+                        p {
+                            font-size: 15px;
+                            font-weight: 500;
+
+                        }
+                    }
+
+                    .value {
+                        p {
+                            font-size: 15px;
+                            line-height: 29px;
+                        }
+
+                    }
+
+                    .money {
+                        width: 35%;
+
+                        h1 {
+                            font-size: 20px;
+
+                            line-height: 22px;
+                            letter-spacing: -0.02em;
+                        }
+                    }
+
+                }
+
+                .btn {
+                    .btn1 {
+
+                        font-size: 18px;
+
+
+
+
+                    }
+
+                    .btn2 {
+
+                        font-size: 15px;
+                        padding: 6px 38px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .profilDoctor {
+        .profilDoctor {
+            flex-direction: column;
+
+            img {
+                width: 427px;
+                height: 500px;
+                margin: 0 auto;
+            }
+
+            .text {
+                h1 {}
+
+                span {}
+
+                h6 {}
+
+                .detal {
+                    .key {
+                        p {
+                            line-height: 30px;
+
+
+                        }
+                    }
+
+                    .value {
+                        p {}
+
+                    }
+
+                    .money {
+
+                        h1 {}
+                    }
+
+                }
+
+                .btn {
+                    .btn1 {
+
+
+                        font-size: 18px;
+
+
+
+                    }
+
+                    .btn2 {
+
+
+                        font-size: 18px;
+                        padding: 10px 58px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 640px) {
+    .profilDoctor1 {
+        .profilDoctor {
+            .text {
+                h1 {
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    font-size: 16px;
+                }
+
+                h6 {
+                    font-size: 14px;
+                    line-height: 29px;
+                }
+
+                .detal {
+                    .key {
+                        p {
+
+                            line-height: 21px;
+
+
+                        }
+                    }
+
+                    .money {
+
+                        h1 {
+                            font-size: 24px;
+                            margin-bottom: 16px;
+                        }
+                    }
+
+                }
+
+                .btn {
+
+                    .btn2 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

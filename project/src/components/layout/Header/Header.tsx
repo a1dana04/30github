@@ -18,7 +18,7 @@ const Header = () => {
     <div className={sass.header1}>
       <div className="container">
         <div className={sass.header}>
-          <Image src={logo} alt="img" />
+        <Link href={"/"}>  <Image src={logo} alt="img" /></Link>
 
           <div className={sass.nav}>
             <Link href={"/"}>Главная</Link>

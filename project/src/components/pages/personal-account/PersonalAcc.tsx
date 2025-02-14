@@ -10,7 +10,7 @@ const PersonalAcc = () => {
   return (
     <div className={sass.acc}>
       <div className={sass.acc1_nav}>
-        <h1>Личный кабинет</h1>
+        <h1>Личный кабинет11111</h1>
         <div className={sass.zapis}>
           <span>
             <LuClipboardList />

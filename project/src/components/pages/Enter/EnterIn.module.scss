@@ -1,0 +1,135 @@
+// EnterIn.module.scss
+.enterIn {
+    background: white;
+    width: 486px;
+    border-radius: 20px;
+    padding: 40px 20px;
+    height: 530px;
+    border: 1px solid #e1e1e1;
+  
+    @media (max-width: 1390px) {
+      width: 35%;
+    }
+  
+    @media (max-width: 1270px) {
+      width: 40%;
+    }
+  
+    @media (max-width: 1080px) {
+      width: 500px;
+      margin-top: 30px;
+    }
+  
+    @media (max-width: 650px) {
+      width: 400px;
+    }
+  
+    @media (max-width: 490px) {
+      padding: 10px 16px;
+      width: 300px;
+      margin-top: 30px;
+      height: 445px;
+    }
+  }
+  
+  .head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  
+  .activeTab,
+  .inactiveTab {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 13px 0;
+  }
+  
+  .inactiveTab {
+    color: #9e9e9e;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 0 56px 0;
+  
+    @media (max-width: 490px) {
+      padding: 25px 0 22px 0;
+    }
+  }
+  
+  .logoWrapper {
+    margin-bottom: 20px;
+  
+    @media (max-width: 490px) {
+      width: 150px;
+    }
+  }
+  
+  .logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  
+    @media (max-width: 490px) {
+      font-size: 18px;
+    }
+  }
+  
+  .description {
+    font-size: 16px;
+    width: 356px;
+    color: #505050;
+    text-align: center;
+    font-weight: 600;
+    line-height: 26px;
+  
+    @media (max-width: 490px) {
+      font-size: 14px;
+      width: 283px;
+    }
+  }
+  
+  .button {
+    width: 100%;
+    display: block;
+    height: 54px;
+    margin-bottom: 10px;
+    border: none;
+    background: #2b7bd4;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background: darken(#2b7bd4, 10%);
+    }
+  
+    @media (max-width: 490px) {
+      height: 34px;
+      font-size: 14px;
+    }
+  }
+  
+  .buttonOutline {
+    background: transparent;
+    color: #2b7bd4;
+    border: 1px solid #2b7bd4;
+    margin-bottom: 40px;
+  
+    &:hover {
+      background: rgba(43, 123, 212, 0.1);
+    }
+  }

@@ -1,0 +1,165 @@
+// EnterDate.module.scss
+.enterDate {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .mainImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .card {
+    position: absolute;
+    bottom: -6px;
+    left: 60px;
+    width: 527px;
+    padding: 16px 34px;
+    border-radius: 20px;
+    border: 1px solid #ececec;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+  
+    @media (max-width: 1270px) {
+      width: 455px;
+    }
+  
+    @media (max-width: 1080px) {
+      bottom: -123px;
+      left: 85px;
+    }
+  
+    @media (max-width: 980px) {
+      width: 389px;
+      padding: 13px 22px;
+    }
+  
+    @media (max-width: 550px) {
+      width: 289px;
+      padding: 5px 9px;
+      bottom: -119px;
+      left: 0;
+    }
+  }
+  
+  .cardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .timeHeading {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+  
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      color: #8e8e8e;
+    }
+  
+    @media (max-width: 650px) {
+      font-size: 18px;
+    }
+  
+    @media (max-width: 550px) {
+      font-size: 14px;
+    }
+  }
+  
+  .avatarWrapper {
+    width: 60px;
+    height: 60px;
+    position: relative;
+  
+    @media (max-width: 650px) {
+      width: 50px;
+      height: 50px;
+    }
+  
+    @media (max-width: 550px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .cardCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+  }
+  
+  .doctorInfo {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: 700;
+  
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      color: #8e8e8e;
+    }
+  
+    @media (max-width: 650px) {
+      font-size: 18px;
+    }
+  
+    @media (max-width: 550px) {
+      font-size: 14px;
+    }
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #2b7bd4;
+  
+    @media (max-width: 650px) {
+      font-size: 20px;
+    }
+  
+    @media (max-width: 550px) {
+      font-size: 16px;
+    }
+  }
+  
+  .portfolioButton {
+    width: 100%;
+    height: 54px;
+    background-color: #2b7bd4;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darken(#2b7bd4, 10%);
+    }
+  
+    @media (max-width: 550px) {
+      height: 34px;
+      font-size: 13px;
+    }
+  }

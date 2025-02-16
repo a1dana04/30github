@@ -25,9 +25,9 @@ const Header = () => {
             <Link href={"/"}>Запись на консультацию</Link>
           </div>
           <div className={sass.btn}>
-            <button>Выбрать специалиста</button>
+           <Link href={"/personal-account"}><button>Выбрать специалиста</button></Link> 
             <div className={sass.btn2}>
-              <Link href={"/personal-account"}>
+              <Link href={"/auth"}>
                 <button>Войти</button>
               </Link>
             </div>

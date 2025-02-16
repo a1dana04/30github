@@ -1,8 +1,9 @@
 // components/EnterIn/EnterIn.jsx
+"use client"
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import styles from './EnterIn.module.scss';
-
+import { useRouter } from 'next/navigation';
+import logomedilink from "@/assets/img/logomedilink.png"
 const EnterIn = () => {
   const router = useRouter();
 
@@ -24,7 +25,7 @@ const EnterIn = () => {
       <div className={styles.main}>
         <div className={styles.logoWrapper}>
           <Image
-            src="/images/logomedilink.png"
+            src={logomedilink}
             alt="Medilink logo"
             width={200}
             height={60}

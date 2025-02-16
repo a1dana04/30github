@@ -1,7 +1,10 @@
-// components/EnterDate/EnterDate.jsx
+
+"use client"
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import enterDateImg from '@/assets/img/enter-date.png';
+import doctorava from '@/assets/img/doctor-ava.png';
 import styles from './EnterDate.module.scss';
+import { useRouter } from 'next/navigation';
 
 const EnterDate = () => {
   const router = useRouter();
@@ -10,7 +13,7 @@ const EnterDate = () => {
     <div className={styles.enterDate}>
       <div className={styles.imageWrapper}>
         <Image 
-          src="/images/enter-date.png"
+          src={enterDateImg}
           alt="Date selection"
           width={500}
           height={300}
@@ -28,7 +31,7 @@ const EnterDate = () => {
 
           <div className={styles.avatarWrapper}>
             <Image 
-              src="/images/avatar.png"
+              src={doctorava}
               alt="Doctor avatar"
               width={60}
               height={60}

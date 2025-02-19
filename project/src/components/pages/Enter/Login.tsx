@@ -9,7 +9,7 @@ const Login = () => {
         <div className={styles.login}>
             <div className={styles.login__title}>
                 <Image src={logo} alt="img" />
-                <h3>Вход111</h3>
+                <h3>Вход</h3>
             </div>
             <div className={styles.login__inputs}>
                 <input type="text" placeholder='Имя пользователя' />

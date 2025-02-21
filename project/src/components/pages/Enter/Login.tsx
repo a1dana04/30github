@@ -18,7 +18,7 @@ const Login = () => {
             </div>
             <div className={styles.login__btn}>
                 <button>Назад</button>
-                <button>Войти23</button>
+                <button>Войти</button>
             </div>
         </div>
     );

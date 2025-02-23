@@ -45,7 +45,7 @@ const EnterIn = () => {
         className={styles.button} 
         onClick={handleLogin}
       >
-        Вход11
+        Вход
       </button>
       
       <button 

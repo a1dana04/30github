@@ -3,7 +3,6 @@
 
     .edu {
         display: flex;
-
         gap: 40px;
 
         .text {
@@ -16,17 +15,19 @@
             padding: 30px;
             border-radius: 12px;
 
-            .list {
+            .timeline {
                 list-style: none;
                 padding-left: 20px;
-
-                li {
+                position: relative;
+                
+                .timelineItem {
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 30px;
                     color: #444444;
                     position: relative;
                     padding-left: 30px;
+                    padding-bottom: 20px;
 
                     &::before {
                         content: '';
@@ -37,13 +38,27 @@
                         height: 12px;
                         background-color: #00aaff;
                         border-radius: 50%;
+                        z-index: 2;
+                    }
+                    
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 5px; /* Центр линии совпадает с центром точки */
+                        top: 22px; /* Начало после точки */
+                        width: 2px;
+                        height: calc(100% - 22px);
+                        background-color: #00aaff;
+                    }
+                    
+                    &.lastItem::after {
+                        display: none; /* Убираем линию для последнего элемента */
                     }
                 }
             }
         }
     }
 }
-
 
 @media (max-width: 1024px) {
     .edu1 {
@@ -59,18 +74,14 @@
     .edu1 {
         .edu {
             flex-direction: column;
-
-            h1 {}
         }
     }
 }
 
-@media (max-width: 640x) {
+@media (max-width: 640px) {
     .edu1 {
         .edu {
             flex-direction: column;
-
-            h1 {}
         }
     }
 }

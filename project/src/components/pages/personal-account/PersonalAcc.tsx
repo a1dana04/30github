@@ -5,12 +5,13 @@ import { LuClipboardList } from "react-icons/lu";
 import { BsChatRightText } from "react-icons/bs";
 import { MdOutlineExitToApp } from "react-icons/md";
 import { PiChatDotsBold } from "react-icons/pi";
+import { CgProfile } from "react-icons/cg";
 
 const PersonalAcc = () => {
   return (
     <div className={sass.acc}>
       <div className={sass.acc1_nav}>
-        <h1>Личный кабинет11111</h1>
+        <h1>Личный кабинет</h1>
         <div className={sass.zapis}>
           <span>
             <LuClipboardList />
@@ -24,13 +25,23 @@ const PersonalAcc = () => {
           <Link href={"/personal-account/chats"}>Чаты</Link>
         </div>
       </div>
+      <div className={sass.bottom}>
+      <div className={sass.profil}>
+        <span>
+        <CgProfile />
+        </span>
+        <Link href={"/personal-account/chats"}>Профиль</Link>
+      </div>
 
       <div className={sass.lagout}>
+    
         <span>
           <MdOutlineExitToApp />
         </span>
         <Link href={"/personal-account/chats"}>Выйти</Link>
       </div>
+      </div>
+    
     </div>
   );
 };

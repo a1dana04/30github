@@ -30,7 +30,7 @@ const PersonalAcc = () => {
         <span>
         <CgProfile />
         </span>
-        <Link href={"/personal-account/chats"}>Профиль</Link>
+        <Link href={"/personal-account/profilDoc"}>Профиль</Link>
       </div>
 
       <div className={sass.lagout}>

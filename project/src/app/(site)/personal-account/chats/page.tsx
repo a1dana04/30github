@@ -1,10 +1,12 @@
-import Chat from '@/components/pages/personal-account/Chat';
+import DocChat from '@/components/pages/personal-account/DoctorChat/DocChat';
+import Chat from '@/components/pages/personal-account/PersonChat/Chat';
 import React from 'react';
 
 const page = () => {
     return (
         <div >
-     <Chat/>
+     {/* <Chat/> */}
+     <DocChat/>
         </div>
     );
 };

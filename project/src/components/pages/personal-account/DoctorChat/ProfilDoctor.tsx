@@ -379,7 +379,7 @@ const ProfilDoctor: React.FC = () => {
         className={styles.saveButton}
         onClick={handleSave}
       >
-        Сохранить изменения
+        Сохранить изменения1
       </button>
     </div>
   );

@@ -2,8 +2,15 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './ProfilDoctor.module.scss';
+import doc from "@/assets/img/аватарка.png"
+import { RiEdit2Fill } from "react-icons/ri";
+import { FaTelegramPlane } from "react-icons/fa";
+import { RiWhatsappFill } from "react-icons/ri";
+import { IoChatboxEllipsesSharp } from "react-icons/io5";
 
-// Типы для рейтинга
+
+
+
 type StarRating = 0 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 3.5 | 4 | 4.5 | 5;
 
 // Типы для дней недели
@@ -54,6 +61,7 @@ const mockDoctorData: Doctor = {
   },
   schedule: {
     days: {
+
       'ПН': true,
       'ВТ': false,
       'СР': true,
@@ -155,7 +163,7 @@ const ProfilDoctor: React.FC = () => {
   const handleSave = () => {
     // Здесь был бы API-запрос для сохранения изменений
     console.log('Сохраненные данные:', doctor);
-    // Сбрасываем все режимы редактирования
+
     setEditMode({
       fullName: false,
       specialization: false,
@@ -200,14 +208,15 @@ const ProfilDoctor: React.FC = () => {
       <div className={styles.header}>
         <div className={styles.avatarContainer}>
           <Image 
-            src="/doctor-avatar.jpg" 
+            src={doc} 
             alt={doctor.fullName} 
             width={100} 
             height={100} 
             className={styles.avatar}
           />
           <button className={styles.editAvatar}>
-            <Image src="/edit-icon.svg" alt="Редактировать" width={16} height={16} />
+          <RiEdit2Fill />
+
           </button>
         </div>
 
@@ -235,7 +244,7 @@ const ProfilDoctor: React.FC = () => {
             className={styles.editButton}
             onClick={() => handleEdit('fullName')}
           >
-            <Image src="/edit-icon.svg" alt="Редактировать" width={16} height={16} />
+             <RiEdit2Fill />
           </button>
         </div>
       </div>
@@ -257,7 +266,7 @@ const ProfilDoctor: React.FC = () => {
             className={styles.editButton}
             onClick={() => handleEdit('specialization')}
           >
-            <Image src="/edit-icon.svg" alt="Редактировать" width={16} height={16} />
+          <RiEdit2Fill />
           </button>
         </div>
       </div>
@@ -278,7 +287,7 @@ const ProfilDoctor: React.FC = () => {
             className={styles.editButton}
             onClick={() => handleEdit('about')}
           >
-            <Image src="/edit-icon.svg" alt="Редактировать" width={16} height={16} />
+           <RiEdit2Fill />
           </button>
         </div>
       </div>
@@ -300,7 +309,7 @@ const ProfilDoctor: React.FC = () => {
             className={styles.editButton}
             onClick={() => handleEdit('yearsOfExperience')}
           >
-            <Image src="/edit-icon.svg" alt="Редактировать" width={16} height={16} />
+           <RiEdit2Fill />
           </button>
         </div>
       </div>
@@ -309,17 +318,16 @@ const ProfilDoctor: React.FC = () => {
         <h3 className={styles.sectionTitle}>Виды связи</h3>
         <div className={styles.contactMethods}>
           <button className={`${styles.contactButton} ${doctor.contactMethods.phone ? styles.active : ''}`}>
-            <Image src="/phone-icon.svg" alt="Телефон" width={20} height={20} />
+          <FaTelegramPlane />
           </button>
           <button className={`${styles.contactButton} ${doctor.contactMethods.chat ? styles.active : ''}`}>
-            <Image src="/chat-icon.svg" alt="Чат" width={20} height={20} />
+          <RiWhatsappFill />
           </button>
           <button className={`${styles.contactButton} ${doctor.contactMethods.video ? styles.active : ''}`}>
-            <Image src="/video-icon.svg" alt="Видео" width={20} height={20} />
+          <IoChatboxEllipsesSharp />
+
           </button>
-          <button className={`${styles.contactButton} ${doctor.contactMethods.email ? styles.active : ''}`}>
-            <Image src="/email-icon.svg" alt="Email" width={20} height={20} />
-          </button>
+       
         </div>
       </div>
 
@@ -336,7 +344,7 @@ const ProfilDoctor: React.FC = () => {
               </div>
             ))}
             <button className={styles.editButton}>
-              <Image src="/edit-icon.svg" alt="Редактировать" width={16} height={16} />
+            <RiEdit2Fill />
             </button>
           </div>
           <div className={styles.hours}>
@@ -356,7 +364,7 @@ const ProfilDoctor: React.FC = () => {
             <p className={styles.educationPeriod}>{edu.period}</p>
             <p className={styles.educationDescription}>{edu.description}</p>
             <button className={styles.editButton}>
-              <Image src="/edit-icon.svg" alt="Редактировать" width={16} height={16} />
+            <RiEdit2Fill />
             </button>
           </div>
         ))}
@@ -369,7 +377,7 @@ const ProfilDoctor: React.FC = () => {
             <p className={styles.experiencePeriod}>{exp.period}</p>
             <p className={styles.experienceDescription}>{exp.description}</p>
             <button className={styles.editButton}>
-              <Image src="/edit-icon.svg" alt="Редактировать" width={16} height={16} />
+            <RiEdit2Fill />
             </button>
           </div>
         ))}
@@ -379,7 +387,7 @@ const ProfilDoctor: React.FC = () => {
         className={styles.saveButton}
         onClick={handleSave}
       >
-        Сохранить изменения1
+        Сохранить изменения
       </button>
     </div>
   );

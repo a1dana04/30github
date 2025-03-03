@@ -8,21 +8,17 @@
         font-weight: 700;
         line-height: 46.44px;
         text-align: left;
-
     }
 
     .profilDoctor {
         display: flex;
         gap: 40px;
 
-
         .text {
-
             border: 1px solid rgb(218, 211, 211);
             width: 100%;
             padding: 20px 20px;
             border-radius: 12px;
-
 
             h1 {
                 font-size: 35px;
@@ -35,8 +31,6 @@
                 font-weight: 600;
                 line-height: 32.78px;
                 color: #2B7BD4;
-
-
             }
 
             h6 {
@@ -45,7 +39,6 @@
                 margin-top: 20px;
                 margin-bottom: 35px;
                 font-weight: 300;
-
             }
 
             .detal {
@@ -53,18 +46,12 @@
                 gap: 30px;
                 margin-top: 20px;
 
-
-
                 .key {
                     p {
                         font-size: 17px;
                         font-weight: 500;
-
                         margin-top: 19px;
-
                     }
-
-
                 }
 
                 .value {
@@ -74,33 +61,22 @@
                         gap: 10px;
 
                         .block {
-                            margin-top: 10px;
-
+                            margin-top: 9px;
                         }
                     }
 
                     p {
-
                         font-size: 17px;
                         font-weight: 300;
                         line-height: 22px;
-
-                        margin-top: 10px;
+                        margin-top: 18px;
 
                         span {
                             width: 24px;
                             height: 24px;
                             color: black;
-
-
-
                         }
-
-
                     }
-
-
-
                 }
 
                 .money {
@@ -110,19 +86,13 @@
                     width: 33%;
 
                     h1 {
-
                         font-size: 30px;
                         font-weight: 800;
                         line-height: 46.44px;
                         letter-spacing: -0.02em;
                         text-align: center;
                         color: #2B7BD4;
-
-
                     }
-
-
-
                 }
             }
 
@@ -134,7 +104,6 @@
                 margin-top: 10%;
 
                 .btn1 {
-
                     font-size: 22px;
                     font-weight: 600;
                     line-height: 30.05px;
@@ -142,11 +111,9 @@
                     background: none;
                     border: none;
                     color: #2B7BD4;
-
                 }
 
                 .btn2 {
-
                     font-size: 22px;
                     font-weight: 600;
                     line-height: 30.05px;
@@ -156,14 +123,41 @@
                     color: white;
                     border-radius: 12px;
                     border: none;
-
                 }
             }
         }
-
     }
 }
 
+// Новые стили для контактных методов
+.contactMethods {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.contactButton {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    &.active {
+        background-color: #e3f2fd;
+        border-color: #2B7BD4;
+        color: #2B7BD4;
+    }
+    
+    &:hover {
+        background-color: #f5f5f5;
+    }
+}
 
 @media (max-width: 1040px) {
     .profilDoctor1 {
@@ -175,7 +169,6 @@
 
                 span {
                     font-size: 20px;
-
                 }
 
                 h6 {
@@ -188,7 +181,6 @@
                         p {
                             font-size: 15px;
                             font-weight: 500;
-
                         }
                     }
 
@@ -197,7 +189,6 @@
                             font-size: 15px;
                             line-height: 29px;
                         }
-
                     }
 
                     .money {
@@ -205,33 +196,30 @@
 
                         h1 {
                             font-size: 20px;
-
                             line-height: 22px;
                             letter-spacing: -0.02em;
                         }
                     }
-
                 }
 
                 .btn {
                     .btn1 {
-
                         font-size: 18px;
-
-
-
-
                     }
 
                     .btn2 {
-
                         font-size: 15px;
                         padding: 6px 38px;
-
                     }
                 }
             }
         }
+    }
+
+    // Адаптивные стили для контактных кнопок
+    .contactButton {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -247,46 +235,20 @@
             }
 
             .text {
-                h1 {}
-
-                span {}
-
-                h6 {}
-
                 .detal {
                     .key {
                         p {
                             line-height: 30px;
-
-
                         }
                     }
-
-                    .value {
-                        p {}
-
-                    }
-
-                    .money {
-
-                        h1 {}
-                    }
-
                 }
 
                 .btn {
                     .btn1 {
-
-
                         font-size: 18px;
-
-
-
                     }
 
                     .btn2 {
-
-
                         font-size: 18px;
                         padding: 10px 58px;
                     }
@@ -295,8 +257,6 @@
         }
     }
 }
-
-
 
 @media (max-width: 640px) {
     .profilDoctor1 {
@@ -319,30 +279,30 @@
                 .detal {
                     .key {
                         p {
-
                             line-height: 21px;
-
-
                         }
                     }
 
                     .money {
-
                         h1 {
                             font-size: 24px;
                             margin-bottom: 16px;
                         }
                     }
-
                 }
 
                 .btn {
-
                     .btn2 {
                         font-size: 16px;
                     }
                 }
             }
         }
+    }
+
+    // Адаптивные стили для контактных кнопок
+    .contactButton {
+        width: 28px;
+        height: 28px;
     }
 }

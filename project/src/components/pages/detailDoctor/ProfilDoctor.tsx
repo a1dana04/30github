@@ -51,7 +51,7 @@ const ProfilDoctor = () => {
                 <p>Проведено консультаций:</p>
                 <p>Рейтинг:</p>
                 <p>Виды связи:</p>
-                <p>Длительность:</p>
+                <p>Длительность1:</p>
               </div>
               <div className={sass.value}>
                 <p>{doctorInfo.details.experience}</p>

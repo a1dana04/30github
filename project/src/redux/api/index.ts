@@ -5,7 +5,7 @@ import {
   } from "@reduxjs/toolkit/query/react";
   
   const baseQuery = fetchBaseQuery({
-    baseUrl: ``,
+    baseUrl: `${process.env.NEXT_PUBLIC_URL}`,
   });
   
   const baseQueryExtended: BaseQueryFn = async (args, api, extraOptions) => {
@@ -18,7 +18,7 @@ import {
     baseQuery: baseQueryExtended,
     refetchOnReconnect: true,
     refetchOnFocus: false,
-    tagTypes: ["product"],
+    tagTypes: ["data"],
     endpoints: () => ({}),
   });
   

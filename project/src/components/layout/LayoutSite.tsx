@@ -3,7 +3,7 @@ import { FC, ReactNode, useEffect, useState } from "react";
 import scss from "./LayoutSite.module.scss";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-import Loader from "@/ui/loader/Loader";
+import Loader from "@/components/ui/loader/Loader";
 
 interface iLayoutSiteProps {
   children: ReactNode;

@@ -7,9 +7,9 @@ interface LayoutAuthProps {
 
 const LayoutAuth: FC<LayoutAuthProps> = ({ children }) => {
   return (
-    <>
+ 
       <>{children}</>
-    </>
+   
   );
 };
 

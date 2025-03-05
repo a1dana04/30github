@@ -1,5 +1,5 @@
 "use client";
-import DropDown from "@/ui/dropDown/DropDown";
+import DropDown from "@/components/ui/dropDown/DropDown";
 import React, { useState } from "react";
 import s from "./SelectDoctor.module.scss";
 type DropDownItem = {
@@ -32,7 +32,7 @@ const fake_data3: DropDownItem[] = [
 
 const SelectDoctor = () => {
   const [time, setTime] = useState("13:30");
- 
+
   return (
     <div className={s.choise}>
       <h1>Выберите врача</h1>

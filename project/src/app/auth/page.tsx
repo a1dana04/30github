@@ -4,7 +4,7 @@ const page = () => {
     return (
         <div>
             
-            <h1>nkndjkngkf</h1>
+      
         </div>
     );
 };

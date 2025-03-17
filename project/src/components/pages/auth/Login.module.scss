@@ -1,7 +1,7 @@
 // Login.module.scss
 .login {
     background: white;
-    width: 40%;
+    width: 500px;
     border-radius: 20px;
     padding: 40px 20px;
     height: 530px;
@@ -11,12 +11,14 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    box-shadow: 2px 2px 5px rgb(0, 183, 255), -3px -3px 5px rgba(43, 123, 212, 1);
 
     &__title {
         img {
             max-width: 100%;
             height: auto;
         }
+
         h3 {
             margin: 0;
         }

@@ -1,10 +1,10 @@
+import Login from '@/components/pages/auth/Login';
 import React from 'react';
-import EnterPages from "@/components/pages/auth/EnterPages"
 
 const page = () => {
     return (
         <div>
-            <EnterPages/>
+            <Login/>
         </div>
     );
 };

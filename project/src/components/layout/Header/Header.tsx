@@ -18,17 +18,26 @@ const Header = () => {
     <div className={sass.header1}>
       <div className="container">
         <div className={sass.header}>
-        <Link href={"/"}>  <Image src={logo} alt="img" /></Link>
+          <Link href={"/"}>
+            {" "}
+            <Image src={logo} alt="img" />
+          </Link>
 
           <div className={sass.nav}>
             <Link href={"/"}>Главная</Link>
             <Link href={"/"}>Запись на консультацию</Link>
           </div>
           <div className={sass.btn}>
-           <Link href={"/personal-account"}><button>Выбрать специалиста</button></Link> 
+            <Link href={"/personal-account"}>
+              <button>Выбрать специалиста</button>
+            </Link>
             <div className={sass.btn2}>
-              <Link href={"/auth"}>
-                <button>Войти</button>
+              <Link href={"/auth/login"}>
+                <button>Вход</button>
+              </Link>
+
+              <Link href={"/auth/forPerDoc"}>
+                <button>Регистрация</button>
               </Link>
             </div>
           </div>
@@ -44,7 +53,7 @@ const Header = () => {
             <Link href={"/#"}>Главная</Link>
             <Link href={"/#"}>Запись на консультацию</Link>
             <a href="#">Выбрать специалиста</a>
-            <Link href="/#">Войти</Link>
+            <Link href="/auth/login">Войти</Link>
           </div>
         )}
       </div>

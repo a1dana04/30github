@@ -32,3 +32,20 @@ interface MainPage {
   div_title4: string;
   des_title4: string;
 }
+
+interface iUserRegisterDoc {
+  id: number;
+  username: string;
+  email: string;
+  special: string;
+  status_edu: string;
+  status_cat: string;
+  phone_number: string;
+}
+
+interface iUserRegisterPati {
+  id: number;
+  username: string;
+  email: string;
+  phone_number: string;
+}

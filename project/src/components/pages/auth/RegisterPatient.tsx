@@ -10,12 +10,12 @@ import { SubmitHandler, useForm } from "react-hook-form";
 const RegisterPatient = () => {
   const router = useRouter();
   const { register, handleSubmit } = useForm<AUTH.RegisterUserPatiRequest>();
-  const [registerUserDoc] = useRegisterUserDocMutation();
+  const [registerUserPati] = useRegisterUserDocMutation();
 
   const onSubmit: SubmitHandler<AUTH.RegisterUserPatiRequest> = async (data) => {
     console.log(data);
     try {
-      const res = await registerUserDoc(data);
+      const res = await registerUserPati(data);
 
       if (res) {
         localStorage.setItem("tokens", JSON.stringify(res.data));

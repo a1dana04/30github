@@ -56,7 +56,7 @@ const SearchDoctor = () => {
                 setSortData({ state: false, title: "По рейтингу" })
               }
             >
-              По рейтингу
+              По специальности
             </p>
           </div>
         )}

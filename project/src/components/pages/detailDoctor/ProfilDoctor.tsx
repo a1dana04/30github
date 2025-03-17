@@ -109,18 +109,13 @@ const ProfilDoctor = () => {
                 <div className={sass.key}>
                   <p>Стаж:</p>
                   <p>Проведено консультаций:</p>
-                  <p>Рейтинг:</p>
                   <p>Виды связи:</p>
-                  <p>Длительность1:</p>
+                  <p>Длительность:</p>
                 </div>
                 <div className={sass.value}>
                   <p>{doctorInfo.details.experience}</p>
                   <p>{doctorInfo.details.consultations}</p>
                   <div className={sass.star1}>
-                    <p>{doctorInfo.details.rating}</p>
-                    <div className={sass.block}>
-                      <Star />
-                    </div>
                   </div>
                 
                   <div className={sass.contactMethods}>
@@ -147,10 +142,7 @@ const ProfilDoctor = () => {
               </div>
 
               <div className={sass.btn}>
-                <button onClick={() => router.push("/personal-account")} className={sass.btn1}>
-                  Только спросить
-                </button>
-                <button className={sass.btn2}> Записаться</button>
+                <button className={sass.btn2}> Перейти в телеграм</button>
               </div>
             </div>
           </div>

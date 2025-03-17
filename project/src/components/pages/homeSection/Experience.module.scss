@@ -9,6 +9,7 @@
         top: -200px;
         width: 100%;
         justify-content: center;
+        
         .box {
           width: 280px;
           height: 90px;
@@ -17,6 +18,7 @@
           border-radius: 16px;
           background: white;
           border: 1px solid rgb(226, 221, 221);
+          box-shadow: 2px 2px 5px rgb(0, 183, 255), -3px -3px 5px rgb(43, 123, 212);
           h1 {
             font-size: 24px;
             font-weight: 700;

@@ -23,10 +23,7 @@ const HomeSection = () => {
               </span>
             </h1>
             <div className={sass.parag}>
-              <div className={sass.butt}>
-                <button className={sass.btn1}>Взрослому</button>
-                <button className={sass.btn2}>Ребёнку</button>
-              </div>
+             
               <p>от 1 200 сом за консультацию</p>
               <Link href={"/choose-doctor"}>
                 <button className={sass.btn3}>Подобрать специалиста</button>

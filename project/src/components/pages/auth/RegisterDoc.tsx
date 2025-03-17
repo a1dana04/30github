@@ -4,18 +4,18 @@ import logo from "@/assets/img/Logo.png";
 import Image from "next/image";
 import s from "@/components/pages/auth/RegisterDoc.module.scss";
 import { useRouter } from "next/navigation";
-import { useRegisterUserMutation } from "@/redux/api/auth";
+import { useRegisterUserDocMutation } from "@/redux/api/auth";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 const RegisterPatient = () => {
   const router = useRouter();
-  const { register, handleSubmit } = useForm<AUTH.RegisterUserRequest>();
-  const [registerUser] = useRegisterUserMutation();
+  const { register, handleSubmit } = useForm<AUTH.RegisterUserDocRequest>();
+  const [registerUserDoc] = useRegisterUserDocMutation();
 
-  const onSubmit: SubmitHandler<AUTH.RegisterUserRequest> = async (data) => {
+  const onSubmit: SubmitHandler<AUTH.RegisterUserDocRequest> = async (data) => {
     console.log(data);
     try {
-      const res = await registerUser(data);
+      const res = await registerUserDoc(data);
 
       if (res) {
         localStorage.setItem("tokens", JSON.stringify(res.data));

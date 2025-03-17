@@ -31,7 +31,7 @@ const fake_data3: DropDownItem[] = [
 ];
 
 const SelectDoctor = () => {
-  const [time, setTime] = useState("13:30");
+
 
   return (
     <div className={s.choise}>
@@ -42,22 +42,7 @@ const SelectDoctor = () => {
         <DropDown name={"Образование"} data={fake_data3} />
         <button>Найти</button>
       </div>
-      <div className={s.choise__blank}>
-        <div className={s.choise__blank__date}>
-          <label htmlFor="">
-            Дата
-            <input type="date" />
-          </label>
-          <label htmlFor="">
-            Время
-            <input
-              type="time"
-              onChange={(e) => setTime(e.target.value)}
-              value={time}
-            />
-          </label>
-        </div>
-      </div>
+   
     </div>
   );
 };

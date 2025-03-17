@@ -1,0 +1,140 @@
+#sectionComent {
+    margin-top: 100px;
+
+    color: #000000;
+    padding-bottom: 100px;
+
+
+    .container {
+        max-width: 810px;
+        margin: 0 auto;
+    }
+
+    .commentInputBox {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        .textArea {
+            width: 100%;
+            height: 100px;
+            padding: 12px;
+            border: 2px solid #2B7BD4;
+            border-radius: 6px;
+            background: #f6f6f6;
+            box-shadow: 2px 2px 5px rgb(0, 183, 255), -3px -3px 5px rgb(43, 123, 212);
+
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+
+           
+
+
+
+        }
+
+        ::placeholder {
+            color: rgb(0, 0, 0);
+        }
+
+        .submitButton {
+            align-self: flex-end;
+            padding: 10px 20px;
+            background: #2B7BD4;
+
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.2s;
+            margin-bottom: 30px;
+
+            &:hover {
+          
+               background: #0a50a6;
+                
+            }
+        }
+    }
+
+    .commentList {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .commentItem {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid  #a3abb6;
+            color: black;
+            box-shadow: 1px 1px 5px;
+
+            .commentHeader {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 10px;
+
+                .avatar {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .author {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #3985db;
+                    margin-right: 20px;
+                }
+
+                .date {
+                    font-size: 15px;
+                    color: #323131;
+                }
+            }
+
+            .commentText {
+                margin-bottom: 10px;
+                font-size: 20px;
+                color: #000000;
+            }
+
+            .replyButton {
+                background: none;
+                border: none;
+                color: #58a6ff;
+                cursor: pointer;
+                font-size: 20px;
+                text-decoration: underline;
+
+                &:hover {
+                    color: #79c0ff;
+                }
+            }
+        }
+    }
+
+    .showMoreButton {
+        display: block;
+        width: 100%;
+        padding: 17px;
+        background-color: #1a73e8;
+        color: #c9d1d9;
+border: none;
+outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 20px;
+        text-align: center;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #448ae5;
+        }
+    }
+}

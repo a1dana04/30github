@@ -23,7 +23,7 @@ const cardData = [
 ];
 
 const Quations = () => {
-  const router = useRouter()
+
   return (
     <div className={sass.quations1}>
       <div className="container">
@@ -39,7 +39,7 @@ const Quations = () => {
           ))}
         </div>
         <div className={sass.btn}>
-          <button onClick={() => router.push("/profile-doctor")}>Задать вопрос</button>
+        
         </div>
       </div>
     </div>
